@@ -10,7 +10,7 @@ Release process:
 # stdlib imports
 import os.path
 #from setuptools import setup, find_packages
-from distutils import setup
+from distutils.core import setup
 from distutils.setuptools import find_packages
 
 __here__ = os.path.dirname(os.path.realpath(__file__))
