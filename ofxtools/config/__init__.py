@@ -55,7 +55,7 @@ else:  # Linux
 
 
 USERCONFIGDIR = CONFIGHOME / PKGNAME
-USERCONFIGDIR.mkdir(parents=True, exist_ok=True)
+#USERCONFIGDIR.mkdir(parents=True, exist_ok=True)
 
 # Logging configuration
 LOGCONFIGPATH = USERCONFIGDIR / "logging.json"
@@ -68,7 +68,7 @@ def configure_logging(level=None):
     Fall back to library default, and create user config file.
     Create directory to save logs from FileHandlers.
     """
-    LOGDIR.mkdir(parents=True, exist_ok=True)
+    #LOGDIR.mkdir(parents=True, exist_ok=True)
 
     config = None
 
